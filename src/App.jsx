@@ -16,7 +16,7 @@ function App() {
     setSearch(e.target.value)
     setProduct(
       Shoes.filter((item) => {
-        return item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+        return item.name.toLowerCase().includes(e.target.value.toLowerCase())
       })
     )
   }
